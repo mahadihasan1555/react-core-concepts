@@ -6,23 +6,42 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit done <code>src/App.js</code> and save to reload.
-        </p>
-        <p>my first paragraph</p>
-        <h1>my heading : {2+2} </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+        <p>I'm a react person</p>
+        <person name = "mahadi"></person>
+        <person></person>
+        <person></person>
+        <person></person>
+       
       </header>
     </div>
   );
+}
+function product (props){
+  const productStyle={
+    border:'1px solid gray',
+    borderRadius: '5px',
+    backgroundColor:'lightgray',
+    height:'200px',
+    width: '200px',
+    float: 'left'
+  }
+
+}
+
+function person (props){
+  const personStyle = {
+    border: '2px solid red',
+    margin: '10px'
+  }
+  return (
+  <div style= {personStyle}>
+    <h1>Name: Sakib</h1>
+    <h3>hero of the year</h3>
+
+
+  </div> 
+  )
 }
 
 export default App;
